@@ -16,8 +16,6 @@ export function ActiveLink({
 
   const className = asPath === rest.href ? activeClassName : "";
 
-  console.log(rest);
-
   return (
     <Link {...rest}>
       {cloneElement(children, {
