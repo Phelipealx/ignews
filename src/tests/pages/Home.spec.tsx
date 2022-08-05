@@ -13,7 +13,7 @@ jest.mock("next-auth/react", () => {
 });
 jest.mock("../../services/stripe");
 
-describe("Home component", () => {
+describe("Home page", () => {
   it("renders correctly", () => {
     render(<Home product={{ priceId: "fake-price-id", amount: "R$10,00" }} />);
 
