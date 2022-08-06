@@ -4,6 +4,8 @@ import { mocked } from "jest-mock";
 import Home, { getStaticProps } from "../../pages";
 import { stripe } from "../../services/stripe";
 
+jest.useFakeTimers();
+
 jest.mock("next-auth/react", () => {
   return {
     useSession() {
