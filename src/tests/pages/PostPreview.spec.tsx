@@ -15,7 +15,9 @@ const post = {
 
 jest.mock("../../services/prismic");
 jest.mock("next-auth/react");
-jest.mock("next/router");
+jest.mock("next/router", () => ({
+  useRouter: jest.fn(),
+}));
 
 describe("Post preview page", () => {
   it("renders correctly", () => {
