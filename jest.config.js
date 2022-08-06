@@ -16,4 +16,8 @@ module.exports = {
     "!src/**/_document.tsx",
   ],
   coverageReporters: ["lcov", "json"],
+  fakeTimers: {
+    doNotFake: ["nextTick"],
+    timerLimit: 5000,
+  },
 };
